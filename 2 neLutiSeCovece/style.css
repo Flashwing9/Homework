@@ -1,0 +1,51 @@
+/* base */
+table {
+    border-collapse: collapse;
+    border: 5px solid black;
+    /* width: 100%; */
+}
+
+th, td {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+}
+
+
+/* inner elements */
+.crveno {
+    background-color: red;
+}
+
+.sino {
+    background-color:rgb(64, 64, 255);
+}
+
+.zeleno {
+    background-color: green;
+}
+
+.sino {
+    background-color: rgb(64, 64, 255);
+}
+
+.zolto {
+background-color: yellow;
+}
+
+.move {
+    background-color: rgb(119, 119, 189);
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+
+}
