@@ -1,0 +1,31 @@
+/* FONT AND TEXT STYLING */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&display=swap');
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+body {
+    overflow: hidden;
+    padding-top: 1%;
+    padding-left: 7%;
+}
+
+
+/* LOGO AND NAVIGATION BAR */
+a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.emoji-mesto-logo {
+    font-size: 2.5em;
+}
+
+/* .navbar {
+    display: flex;
+    flex-direction: row-reverse;
+} */
