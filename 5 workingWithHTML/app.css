@@ -1,31 +1,69 @@
 /* FONT AND TEXT STYLING */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
 html {
-    font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     color: black;
+    font-size: 62.5%;
 }
 
 body {
     overflow: hidden;
     padding-top: 1%;
-    padding-left: 7%;
+    
 }
 
 
 /* LOGO AND NAVIGATION BAR */
 a {
     text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    padding-left: 7%;
 }
 
-.emoji-mesto-logo {
-    font-size: 2.5em;
+a:link {
+    color: black
 }
 
-/* .navbar {
-    display: flex;
-    flex-direction: row-reverse;
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: rgb(82, 82, 82);
+}
+
+a:focus {
+    color: rgb(82, 82, 82);
+}
+
+.navbar-pages {
+    padding: 0 3rem;
+    font-size: 3rem;
+}
+
+.leftmost-nav-item {
+    margin-left: 50%;
+    display: block;
+}
+
+.right-nav-item {
+    display: inline;
+}
+
+
+/* IMAGES
+.image-pool {
+    margin-top: 10rem;
+    margin-left: 0;
+}
+
+img {
+    display: inline;
+}
+
+.side-images {
+    width: 25%;
+}
+
+.main-image {
+    height: 100v;
 } */
