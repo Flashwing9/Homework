@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html  {
+    font-size: 62.5%;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    position: relative;
+    font-size: 1.5rem;
+    height: 100%;
+}
+
+main {
+    position: relative;
+    height: 100%;
+}
+
+main>div {
+    border: 1rem solid black;
+}
+
+.one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 10%;
+    background-color: rgb(229,238,235);
+}
+
+.two {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 35%;
+    height: 10%;
+    background-color: rgb(242,231,213);
+}
+
+.three {
+    position: absolute;
+    top: 0;
+    left: 65%;
+    height: 10%;
+    width: 25%;
+    background-color: rgb(242,201,104);
+}
+
+.four {
+    position: absolute;
+    top: 0;
+    left: 90%;
+    height: 65%;
+    width: 10%;
+    background-color: rgb(252,253,231);
+}
+
+.five {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 15%;
+    height: 20%;
+    background-color: rgb(251,253,231);
+}
+
+.six {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 50%;
+    height: 40%;
+    background-color: rgb(214,45,36);
+}
+
+.seven {
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    width: 25%;
+    height: 20%;
+    background-color: rgb(242,201,104);
+}
+
+.eight {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 15%;
+    height: 35%;
+    background-color: rgb(225,234,229);
+}
+
+.nine {
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    width: 12.5%;
+    height: 20%;
+    background-color: rgb(223,229,208);
+}
+
+.ten {
+    position: absolute;
+    top: 30%;
+    left: 77.5%;
+    width: 12.5%;
+    height: 20%;
+}
+
+.eleven {
+    position: absolute;
+    top: 49%;
+    left: 15%;
+    width: 25%;
+    height: 40%;
+    color: white;
+    background-color: rgb(19,4,9);
+}
+
+.twelve {
+    position: absolute;
+    top: 49%;
+    left: 40%;
+    width: 25%;
+    height: 16%;
+    background-color: rgb(192,191,186);
+}
+
+.thirteen {
+    position: absolute;
+    top: 64%;
+    left: 40%;
+    width: 25%;
+    height: 10%;
+    background-color: rgb(222,226,212);
+}
+
+.fourteen {
+    position: absolute;
+    top: 49%;
+    left: 65%;
+    width: 25%;
+    height: 16%;
+}
+
+.fifteen {
+    position: absolute;
+    top: 65%;
+    left: 0;
+    width: 15%;
+    height: 35%;
+    background-color: rgb(244,198,90);
+}
+
+.sixteen {
+    position: absolute;
+    bottom: 0;
+
+    left: 15%;
+    width: 25%;
+    height: 20%;
+    background-color: rgb(227,222,217);
+}
+
+.seventeen {
+    position: absolute;
+    top: 65%;
+    right: 0;
+    background-color: rgb(214,45,36);
+    width: 10%;
+    height: 35%;
+}
+
+.eighteen {
+    position: absolute;
+    top: 64%;
+    right: 10%;
+    width: 25%;
+    height: 30%;
+    background-color: rgb(36,23,133);
+    color: white;
+}
+
+.nineteen {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    height: 7%;
+    width: 50%;
+}
+
+.twenty {
+    position: absolute;
+    bottom: 7%;
+    left: 40%;
+    width: 25%;
+    height: 19%;
+    background-color: rgb(11,2,5);
+    color: white;
+
+}
