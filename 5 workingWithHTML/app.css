@@ -7,16 +7,13 @@ html {
 }
 
 body {
-    overflow: hidden;
     padding-top: 1%;
-    
 }
 
 
 /* LOGO AND NAVIGATION BAR */
 a {
     text-decoration: none;
-    padding-left: 7%;
 }
 
 a:link {
@@ -35,35 +32,28 @@ a:focus {
     color: rgb(82, 82, 82);
 }
 
-.navbar-pages {
+.navbarPages {
     padding: 0 3rem;
     font-size: 3rem;
 }
 
-.leftmost-nav-item {
-    margin-left: 50%;
-    display: block;
+nav {
+    border-bottom-style: solid;
+    border-color: solid black;
+    border-width: 0.2rem;
 }
 
-.right-nav-item {
-    display: inline;
+.logo {
+    margin-left: 10rem;
 }
 
 
-/* IMAGES
-.image-pool {
-    margin-top: 10rem;
-    margin-left: 0;
+/* INTRO TEXT */
+.introText {
+    margin-top: 5rem;
+    padding-left: 10rem;
+    width: 45%;
+    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
 }
-
-img {
-    display: inline;
-}
-
-.side-images {
-    width: 25%;
-}
-
-.main-image {
-    height: 100v;
-} */
