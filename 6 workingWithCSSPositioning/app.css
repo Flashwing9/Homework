@@ -1,6 +1,98 @@
-body {
-     
-    margin: 5rem;
-    position: relative;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+html  {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 5rem;
+    position: relative;
+    font-size: 1.5rem;
+    height: 100%;
+}
+
+.goreLevoBelo, .crveno, .sredinaLevoBelo, .sino, .doluBelo, .sitnoBelo, .zolto {
+    border: 0.7rem solid rgb(69,58,54);
+}
+
+main {
+    position: relative;
+    height: 500px;
+}
+
+.goreLevoBelo {
+    width: 25%;
+    height: 30%;
+    background-color: rgb(254,249,230);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.crveno {
+    width: 75%;
+    height: 70%;
+    background-color: rgb(236,73,56);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.sredinaLevoBelo {
+    background-color: rgb(254,249,230);
+    position: absolute;
+    top: 30%;
+    width: 25%;
+    height: 40%;
+}
+
+
+
+
+
+section {
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+
+.sino {
+    background-color: rgb(64,156,197);
+    position: absolute;
+    left: 0;
+    bottom: 75%;
+    width: 25%;
+    height: 100%;
+}
+
+.doluBelo {
+    background-color: rgb(254,249,230);
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    right: 5%;
+    bottom: 75%;
+}
+
+.sitnoBelo {
+    background-color: rgb(254,249,230);
+    position: absolute;
+    width: 5%;
+    height: 50%;
+    right: 0;
+    bottom: 125%;
+}
+
+.zolto {
+    background-color: rgb(255,255,0);
+    position: absolute;
+    width: 5%;
+    height: 50%;
+    right: 0;
+    bottom: 75%;
+}
