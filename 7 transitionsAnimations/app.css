@@ -1,0 +1,91 @@
+/* ========================================BASE */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    height: 1000px;
+    overflow: hidden;
+}
+
+
+
+
+/* =================================BOX STYLE */
+.mainContainer {
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto;
+    border: 1px solid black;
+    width: 60%;
+    margin: 5rem;
+    height: 30%;
+}
+
+.box {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    position: relative;
+}
+
+.one {
+    background-color: rgb(221,72,56);
+    animation-name: loadingOne;
+}
+
+.loadingBorder {
+    padding: 0.2rem 2rem;
+    background-color: #e84c3c;
+    animation-name: loading-border;
+    border-color: whitesmoke;
+    position: absolute;
+    animation: ;
+}
+
+.two {
+    background-color: #e84c3c;
+    animation-name: loadingTwo;
+}
+
+.three {
+    background-color: #e84c3c;
+    animation-name: circleOne;
+}
+
+.four {
+    background-color: rgb(221,72,56);
+    animation-name: circleTwo;
+}
+
+
+
+
+/* =============================BOX ANIMATIONS */
+.loadingBorder:before {
+    border: 0;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loading-border {
+    from    {
+        
+    }
+}
+
+/* .loadingBorder:after {
+    border-top: 3px solid whitesmoke;
+    border-bottom: 3px solid whitesmoke;
+}        
+     */
