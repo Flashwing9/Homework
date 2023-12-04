@@ -14,7 +14,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     padding-top: 1%;
-    background-color: #F0F4C3;
+    background-color: #CDDC39;
 }
 
 
@@ -28,7 +28,6 @@ nav {
 .logo {
     font-size: 2.8rem;
     padding-left: 8rem;
-    /* font-family: 'Great Vibes', cursive; */
     font-weight: bold;
     font-family: 'Ephesis', cursive;
 }
@@ -76,10 +75,25 @@ a:active {
     width: 55%;
 }
 
+
+
+/* =========================================================FOOTER */
+footer {
+    background-color: #F0F4C3;
+    bottom: 0;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    gap: 10rem;
+}
+
+
+
 /* MAIN */
 .homeMain {
-    background-color: #757575;
-    height: 100vh;
+    height: 40vh;
 }
 
 .mainBody {
@@ -142,3 +156,25 @@ a:active {
 
 
 /* ====================================================ABOUT PAGE */
+.aboutDiv {
+    background-color: #BDBDBD;
+    height: 25rem;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 35rem;
+}
+
+.aboutWhatWeDo {
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    padding-left: 4rem;
+    width: 30rem;
+}
+
+.aboutWhatWeDoText {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    width: 50rem;    
+}
