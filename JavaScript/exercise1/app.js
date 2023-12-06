@@ -12,8 +12,15 @@ if (moneyAmount === null) {
     console.log("invalid input");
 } else if (moneyAmount === undefined) {
     console.log("that value is undefined");
-} else if (typeof moneyAmount === "string") {
-    console.log("that is a string, enter a number");
 } else if (moneyAmount >= 100) {
     console.log("you should spend it wisely");
+}
+
+
+
+
+
+//ova tuka ne uspeva da pronajde strings vo promptot i ne printa    console.log("that is a string, enter a number");
+else if (typeof moneyAmount === "string") {
+    console.log("that is a string, enter a number");
 }
