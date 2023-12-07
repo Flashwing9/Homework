@@ -35,4 +35,6 @@ if (yearOfBirth === null) {
     console.log("invalid input");
 } else if (yearOfBirth === undefined) {
     console.log("that value is undefined");
+} else if (Number.isNaN(Number(userInput))) {
+    console.log("thats not a number");
 }

@@ -2,25 +2,24 @@
 // Action: Ask the user how much money he has, and depending on the value, suggest to him what he should do
 
 
-let moneyAmount = prompt("How much money do you have?");
+let userInput = prompt("How much money do you have?");
 
-if (moneyAmount === null) {
+if (userInput === null) {
     console.log("do NOT click the cancel button");
-} else if (moneyAmount === "") {
+} else if (userInput === "") {
     console.log("you didnt enter anything");
-} else if (moneyAmount === NaN) {
+} else if (userInput === NaN) {
     console.log("invalid input");
-} else if (moneyAmount === undefined) {
+} else if (userInput === undefined) {
     console.log("that value is undefined");
-} else if (moneyAmount >= 100) {
+} else if (Number.isNaN(Number(userInput))) {
+    console.log("that is not a number");
+} else if (userInput >= 100) {
     console.log("you should spend it wisely");
-}
-
-
-
-
-
-//ova tuka ne uspeva da pronajde strings vo promptot i ne printa    console.log("that is a string, enter a number");
-else if (typeof moneyAmount === "string") {
-    console.log("that is a string, enter a number");
+} else if (userInput >= 50) {
+    console.log("you can go out and have a nice night");
+} else if (userInput >= 10) {
+    console.log("you should save up your money");
+} else if (userInput < 10) {
+    console.log("you should work and save up some money");
 }
