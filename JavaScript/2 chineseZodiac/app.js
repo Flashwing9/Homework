@@ -5,6 +5,14 @@ let repText = "In the chinese zodiac you are the animal";
 
 if (yearOfBirth === null) {
     console.log("dont click cancel");
+} else if (Number.isNaN(Number(yearOfBirth))) {
+    console.log("thats not a number");
+} else if (yearOfBirth === undefined) {
+    console.log("that value is undefined");
+} else if (yearOfBirth === NaN) {
+    console.log("invalid input");
+} else if (yearOfBirth === "") {
+    console.log("you didnt enter anything");
 } else if (chineseZodiacFormula === 0) {
     console.log(repText, "rat");
 } else if (chineseZodiacFormula === 1) {
@@ -29,12 +37,4 @@ if (yearOfBirth === null) {
     console.log(repText, "dog");
 } else if (chineseZodiacFormula === 11) {
     console.log(repText, "pig");
-} else if (yearOfBirth === "") {
-    console.log("you didnt enter anything");
-} else if (yearOfBirth === NaN) {
-    console.log("invalid input");
-} else if (yearOfBirth === undefined) {
-    console.log("that value is undefined");
-} else if (Number.isNaN(Number(userInput))) {
-    console.log("thats not a number");
 }

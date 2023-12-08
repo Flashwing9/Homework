@@ -3,6 +3,8 @@
 
 
 let userInput = prompt("How much money do you have?");
+let numberValue = Number(userInput); /* pretvara vo broj*/
+let isNumberInvalid = Number.isNaN(numberValue); /* proveruva dali e NaN*/
 
 if (userInput === null) {
     console.log("do NOT click the cancel button");
@@ -12,7 +14,7 @@ if (userInput === null) {
     console.log("invalid input");
 } else if (userInput === undefined) {
     console.log("that value is undefined");
-} else if (Number.isNaN(Number(userInput))) {
+} else if (isNumberInvalid) {
     console.log("that is not a number");
 } else if (userInput >= 100) {
     console.log("you should spend it wisely");
