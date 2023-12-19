@@ -1,5 +1,5 @@
 function withdrawFromATM() {
-    let accountBalance = 100000;
+    let accountBalance = 10000;
     let withdrawAmount = parseFloat(prompt("input the amount you want to withdraw"))
 
     if (Number.isNaN(withdrawAmount)) {
@@ -9,7 +9,7 @@ function withdrawFromATM() {
 
     if (withdrawAmount > accountBalance) {
         console.log("not enough money in account");
-        return "not enough money";
+        return;
     }
 
     let remainingBalance = accountBalance - withdrawAmount;
@@ -24,4 +24,4 @@ function withdrawFromATM() {
 }
 
 let withdrawResult = withdrawFromATM();
-console.log(withdrawResult);
+console.log(withdrawResult); 
