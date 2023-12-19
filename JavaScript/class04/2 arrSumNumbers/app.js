@@ -30,6 +30,32 @@ console.log(finalResult);
 ///////////////////////////////////////////////////////////
 
 
-function validateNumber(params) {
-    
-}
+function concatenateStringsWithValidation(arrayOfStrings) {
+    if (!Array.isArray(arrayOfStrings) || arrayOfStrings === null || arrayOfStrings === undefined) {
+        return "please enter an acceptable string";
+    }
+
+    let resultString = "";  
+    for (let i = 0; i < arrayOfStrings.length; i++) {
+        const currentElement = arrayOfStrings[i];
+
+        if (!validateNumber(currentElement)) {
+        return "please enter a number";
+        }
+        resultString += currentElement;
+
+        if (i < arrayOfStrings.length - 1) {
+        resultString += " ";
+        }
+    }
+
+    return resultString;
+    }
+
+    function validateNumber(value) {
+    return !isNaN(parseFloat(value)) && isFinite(value);
+    }
+
+    const mixedArray = ["Hello", "world", "!", 49, "This", "is", "a", "test"];
+    const concatenatedString = concatenateStringsWithValidation(mixedArray);
+    console.log(concatenatedString);
