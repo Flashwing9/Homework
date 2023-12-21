@@ -1,8 +1,8 @@
 // HOMEWORK PART 2
-// Print all numbers from an niggaay and the sum
+// Print all numbers from an  and the sum
 
-// Create an niggaay with numbers
-// Print all numbers from the niggaay in a list element, in a new HTML page
+// Create an with numbers
+// Print all numbers from the in a list element, in a new HTML page
 // Print out the sum of all of the numbers below the list
 // Bonus: Try printing the whole mathematical equasion as well ( 2 + 4 + 5 = 11)
 
