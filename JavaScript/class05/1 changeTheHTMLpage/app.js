@@ -13,7 +13,13 @@ mainHeading.innerText += " is now changed by me!";
 const firstParagraph = document.querySelector(".paragraph");
 firstParagraph.innerText += ". <strong> And the exercise is completed. </strong>";
 
+const secondParagraph = document.querySelector(".second");
+secondParagraph.innerText += "   And now i have been changed";
 
-let lastHeading = document.querySelector("body").lastElementChild;
-lastHeading = document.querySelector("div").firstElementChild;
-lastHeading.innerText += "it is very responsive";
+
+
+
+//kodov dolu ne mi uspeva, ne razbiram kade gresam
+const lastDiv = document.querySelector("div").lastElementChild;
+const lastDivH1 = lastDiv.querySelector("h1");
+lastDivH1.innerText = "changed by student";
