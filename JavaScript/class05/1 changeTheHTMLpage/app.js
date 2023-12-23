@@ -16,19 +16,6 @@ firstParagraph.innerText += ". <strong> And the exercise is completed. </strong>
 const secondParagraph = document.querySelector(".second");
 secondParagraph.innerText += "   And now i have been changed";
 
-const allDivs = document.querySelectorAll("div");
-const lastDiv = allDivs.[allDivs.length - 1];
-const lastH1 = lastDiv.querySelector("h1");
-lastH1.innerText = "finally changed";
-
-
-
-
-
-
-
-
-
 
 
 
@@ -36,3 +23,9 @@ lastH1.innerText = "finally changed";
 // const selectLastDiv = document.querySelector("body").lastElementChild;
 // const lastH1 = selectLastDiv.querySelector("h1");
 // lastH1.innerText = "it is now changed";
+
+// i ova ne raboti
+// const allDivs = document.querySelectorAll("div");
+// const lastDiv = allDivs.[allDivs.length - 1];
+// const lastH1 = lastDiv.querySelector("h1");
+// lastH1.innerText = "finally changed";
