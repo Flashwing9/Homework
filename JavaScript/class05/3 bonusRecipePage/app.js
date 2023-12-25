@@ -18,13 +18,3 @@ function storingIngredientNames() {
 }
 
 const printRecipeName = document.querySelector(".recipeName").textContent = nameRecipeInput;
-
-
-// "Print to console": {
-//     "prefix": "cl",
-//     "body": [
-//         "console.log();",
-//     ],
-//     "description": "Log output to console"
-// // }
-// }

@@ -24,8 +24,9 @@ secondParagraph.innerText += "   And now i have been changed";
 // const lastH1 = selectLastDiv.querySelector("h1");
 // lastH1.innerText = "it is now changed";
 
-// i ova ne raboti
-// const allDivs = document.querySelectorAll("div");
-// const lastDiv = allDivs.[allDivs.length - 1];
-// const lastH1 = lastDiv.querySelector("h1");
-// lastH1.innerText = "finally changed";
+const allDivs = document.querySelectorAll("div");
+const lastDiv = allDivs[allDivs.length - 1];
+const lastH1 = lastDiv.querySelector("h1");
+lastH1.innerText = "finally changed";
+
+const lastH3 = lastDiv.querySelector("h3").innerText = "changed by student";
