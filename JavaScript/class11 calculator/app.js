@@ -26,12 +26,6 @@ clearAll.addEventListener("click", function() {
     console.log("im working");
 });
 
-function changeDisplayValue(input) {
-    input  = one || two || three || four || five || six || seven || eight || nine || zero;
-    console.log("im working");
-    return display.value += input;
-}
-
 
 one.addEventListener("click", function() {
     display.value = "1";
@@ -79,6 +73,18 @@ nine.addEventListener("click", function() {
 });
 
 zero.addEventListener("click", function() {
-    display.value = "0";
+    display.value = changeDisplayValue(0);
     console.log("im working0");
 });
+
+
+// function changeDisplayValue(input) {
+//     input  = one || two || three || four || five || six || seven || eight || nine || zero;
+//     console.log("im working");
+//     console.log(display.value += input);
+//     return display.value += input;
+// }
+
+function changeDisplayValue(input){
+    display.value += input;
+}
