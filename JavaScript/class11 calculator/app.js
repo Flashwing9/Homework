@@ -20,15 +20,65 @@ const decimalPoint = document.querySelector(".decimalPoint");
 const zero = document.querySelector(".zero");
 const equals = document.querySelector(".equals");
 
-// const buttons = [display, clearAll, clearOne, divide, seven, eight, nine, multiply, four, five, six, minus, one, two, three, plus, decimalPoint, zero, equals,];
-
-display.value = [100];
 
 clearAll.addEventListener("click", function() {
-    display.innerText = 0;
+    display.value = 0;
+    console.log("im working");
 });
 
-clearOne.addEventListener("click", function() {
-    display.innerText = display.pop();
-    console.log(display);
+function changeDisplayValue(input) {
+    input  = one || two || three || four || five || six || seven || eight || nine || zero;
+    console.log("im working");
+    return display.value += input;
+}
+
+
+one.addEventListener("click", function() {
+    display.value = "1";
+    console.log("im working1");
+});
+
+two.addEventListener("click", function() {
+    display.value = "2";
+    console.log("im working2");
+});
+
+three.addEventListener("click", function() {
+    display.value = "3";
+    console.log("im working3");
+});
+
+four.addEventListener("click", function() {
+    display.value = "4";
+    console.log("im working4");
+});
+
+five.addEventListener("click", function() {
+    display.value = "5";
+    console.log("im working5");
+});
+
+six.addEventListener("click", function() {
+    display.value = "6";
+    console.log("im working6");
+});
+
+seven.addEventListener("click", function() {
+    display.value = "7";
+    console.log("im working7");
+});
+
+eight.addEventListener("click", function() {
+    display.value = "8";
+    console.log("im working8");
+});
+
+nine.addEventListener("click", function() {
+    display.value = "9";
+    console.log("im working9");
+});
+
+zero.addEventListener("click", function() {
+    display.value = "0";
+    console.log("im working0");
 });
