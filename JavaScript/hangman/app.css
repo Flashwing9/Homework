@@ -1,0 +1,23 @@
+/* ================================================BASE */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+section {
+    border: 1px solid black;
+    height: 10rem;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
