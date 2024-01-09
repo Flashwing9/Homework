@@ -78,6 +78,8 @@ zero.addEventListener("click", function() {
     console.log("im working0");
 });
 
+let numbers = one || two || three || four || five || six || seven || eight || nine || zero
+
 
 
 // OPERANDS
@@ -96,20 +98,31 @@ minus.addEventListener("click", function() {
     console.log("minus is working");
 });
 
-plus.addEventListener("click", function() {
-    display.value += "+";
-    console.log("plus is working fine");
-});
+// plus.addEventListener("click", function() {
+//     display.value += "+";
+//     console.log("plus is working fine");
+// });
 
 decimalPoint.addEventListener("click", function() {
     display.value += ".";
     console.log("decimal point is working");
 })
 
-equals.addEventListener("click", function(input) {
-    input = 
-    display.value = input
-    console.log("equals is working great");
+equals.addEventListener("click", function() {
+    let secondNum;
+    display.value = secondNum;
+
+    console.log("equals is working great" + secondNum);
 });
 
 
+
+
+let firstNum;
+
+plus.addEventListener("click", function() {
+    firstNum = display.value;
+    display.value = "+";
+    console.log(`this is the first number${firstNum}`);
+    let secondNum;
+});
