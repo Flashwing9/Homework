@@ -17,7 +17,7 @@ section {
     margin: 10rem 16.66666666666667rem;
     display: grid;
     border: 1px solid black;
-    width: 28rem;
+    width: 28.2rem;
     height: 42rem;
     grid-template-columns: 7rem 7rem 7rem 7rem;
     grid-template-rows: 7rem 7rem 7rem 7rem 7rem 7rem;

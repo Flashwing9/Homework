@@ -98,10 +98,10 @@ minus.addEventListener("click", function() {
     console.log("minus is working");
 });
 
-// plus.addEventListener("click", function() {
-//     display.value += "+";
-//     console.log("plus is working fine");
-// });
+plus.addEventListener("click", function() {
+    display.value += "+";
+    console.log("plus is working fine");
+});
 
 decimalPoint.addEventListener("click", function() {
     display.value += ".";
@@ -109,20 +109,19 @@ decimalPoint.addEventListener("click", function() {
 })
 
 equals.addEventListener("click", function() {
-    let secondNum;
-    display.value = secondNum;
-
-    console.log("equals is working great" + secondNum);
+    secondNum = display.value;
+    console.log(`equals is working ${secondNum}`);
+    console.log(typeof secondNum);
 });
 
 
 
 
 let firstNum;
+let secondNum;
 
 plus.addEventListener("click", function() {
     firstNum = display.value;
-    display.value = "+";
-    console.log(`this is the first number${firstNum}`);
-    let secondNum;
+    // display.value = "+";
+    console.log(`this is the first number ${firstNum}`);
 });
