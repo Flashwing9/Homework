@@ -26,6 +26,12 @@ section {
     width: 50rem;
 }
 
+.hangingMan {
+    height: 29.8rem;
+    width: 49.8rem;
+    position: absolute;
+}
+
 .playButton {
     margin: 3rem;
     width: 22rem;
@@ -108,4 +114,8 @@ button:hover {
 button:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
+}
+
+h1 {
+    text-align: center;
 }
