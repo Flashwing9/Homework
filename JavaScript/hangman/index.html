@@ -1,62 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hangman</title>
-    <link rel="stylesheet" href="app.css">
-</head>
-<body>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
     <section>
-        <div class="hangmanBox">
-            <img class="hangingMan phase2" src="/images/phase2.png">
-            <img class="hangingMan phase3" src="/images/phase3.png">
-            <img class="hangingMan phase4" src="/images/phase4.png">
-            <img class="hangingMan phase5" src="/images/phase5.png">
-            <img class="hangingMan phase6" src="/images/phase6.png">
-            <img class="hangingMan phase7" src="/images/phase7.png">
-            <img class="hangingMan phase1" src="/images/phase1.png">
-        </div>
+      <div class="hangmanBox">
+        <img class="hangingMan gameOver" src="/images/gameOver.jpg">
+        <img class="hangingMan phase2" src="/images/phase2.png" />
+        <img class="hangingMan phase3" src="/images/phase3.png" />
+        <img class="hangingMan phase4" src="/images/phase4.png" />
+        <img class="hangingMan phase5" src="/images/phase5.png" />
+        <img class="hangingMan phase6" src="/images/phase6.png" />
+        <img class="hangingMan phase7" src="/images/phase7.png" />
+        <img class="hangingMan phase1" src="/images/phase1.png" />
+      </div>
     </section>
 
     <section class="playButtons">
-        <button class="playButton">Hint</button>
-        <button class="playButton">Play Again</button>
+      <button class="playButton">Hint</button>
+      <button id="playButton" class="playButton">Play Again</button>
     </section>
-    <p class="chosenCategory">The Chosen Category Is: </p>
+    <p class="chosenCategory">The Chosen Category Is: &nbsp;</p>
     <p class="word">_ _ _ _ _ _</p>
     <h1 class="counter">counter:</h1>
-    <br><br>
+    <br /><br />
     <div class="keyboardBox">
-        <div class="keyboard">
-            <button class="letterA letterButton">A</button>
-            <button class="letterB letterButton">B</button>
-            <button class="letterC letterButton">C</button>
-            <button class="letterD letterButton">D</button>
-            <button class="letterE letterButton">E</button>
-            <button class="letterF letterButton">F</button>
-            <button class="letterG letterButton">G</button>
-            <button class="letterH letterButton">H</button>
-            <button class="letterI letterButton">I</button>
-            <button class="letterJ letterButton">J</button>
-            <button class="letterK letterButton">K</button>
-            <button class="letterL letterButton">L</button>
-            <button class="letterM letterButton">M</button>
-            <button class="letterN letterButton">N</button>
-            <button class="letterO letterButton">O</button>
-            <button class="letterP letterButton">P</button>
-            <button class="letterQ letterButton">Q</button>
-            <button class="letterR letterButton">R</button>
-            <button class="letterS letterButton">S</button>
-            <button class="letterT letterButton">T</button>
-            <button class="letterU letterButton">U</button>
-            <button class="letterV letterButton">V</button>
-            <button class="letterW letterButton">W</button>
-            <button class="letterX letterButton">X</button>
-            <button class="letterY letterButton">Y</button>
-            <button class="letterZ letterButton">Z</button>
-        </div>
+      <div class="keyboard">
+        <button class="letterA letterButton">A</button>
+        <button class="letterB letterButton">B</button>
+        <button class="letterC letterButton">C</button>
+        <button class="letterD letterButton">D</button>
+        <button class="letterE letterButton">E</button>
+        <button class="letterF letterButton">F</button>
+        <button class="letterG letterButton">G</button>
+        <button class="letterH letterButton">H</button>
+        <button class="letterI letterButton">I</button>
+        <button class="letterJ letterButton">J</button>
+        <button class="letterK letterButton">K</button>
+        <button class="letterL letterButton">L</button>
+        <button class="letterM letterButton">M</button>
+        <button class="letterN letterButton">N</button>
+        <button class="letterO letterButton">O</button>
+        <button class="letterP letterButton">P</button>
+        <button class="letterQ letterButton">Q</button>
+        <button class="letterR letterButton">R</button>
+        <button class="letterS letterButton">S</button>
+        <button class="letterT letterButton">T</button>
+        <button class="letterU letterButton">U</button>
+        <button class="letterV letterButton">V</button>
+        <button class="letterW letterButton">W</button>
+        <button class="letterX letterButton">X</button>
+        <button class="letterY letterButton">Y</button>
+        <button class="letterZ letterButton">Z</button>
+      </div>
     </div>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
