@@ -38,7 +38,6 @@ clearAll.addEventListener("click", function () {
 
 // NUMBERS
 one.addEventListener("click", function () {
-  c;
   if (isLastCharOperator) {
     display.value = "";
   }
@@ -135,7 +134,7 @@ divide.addEventListener("click", function () {
     secondNum = display.value;
     console.log(secondNum);
   } else {
-    firstNum = display.value; // 655
+    firstNum = display.value; 
   }
   if (!isLastCharOperator) {
     display.value += "÷";
@@ -149,7 +148,7 @@ multiply.addEventListener("click", function () {
     secondNum = display.value;
     console.log(secondNum);
   } else {
-    firstNum = display.value; // 655
+    firstNum = display.value; 
   }
   if (!isLastCharOperator) {
     display.value += "x";
@@ -163,7 +162,7 @@ minus.addEventListener("click", function () {
     secondNum = display.value;
     console.log(secondNum);
   } else {
-    firstNum = display.value; // 655
+    firstNum = display.value; 
   }
   if (!isLastCharOperator) {
     display.value += "-";
@@ -206,5 +205,7 @@ decimalPoint.addEventListener("click", function () {
 });
 
 equals.addEventListener("click", function () {
-  console.log(firstNum);
+  console.log("equals is working");
+  let finalResult = Number(firstNum) + Number(secondNum);
+  display.value = finalResult;
 });
