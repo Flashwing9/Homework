@@ -23,87 +23,91 @@ const getAllBooks = async () => {
 const saveBooks = async books => {
   await DataService.saveJSONFile(BOOKS_PATH, books);
 }
-// saveBooks("ooawoaoooaowoawawaoo");
+// // saveBooks("ooawoaoooaowoawawaoo");
 
 
-//book model & adding new book
-const createBook = async (title, author, publicationYear, quantity) => {
-  try {
-    const books = await getAllBooks();
+// //book model & adding new book
+// const createBook = async (title, author, publicationYear, quantity) => {
+//   try {
+//     const books = await getAllBooks();
 
-    const newBook = {
-      id: uuid(),
-      title,
-      author,
-      publicationYear,
-      quantity
-    };
+//     const newBook = {
+//       id: uuid(),
+//       title,
+//       author,
+//       publicationYear,
+//       quantity
+//     };
 
-    books.push(newBook);
+//     books.push(newBook);
 
-    await saveBooks(books);
-  } catch (err) {
-    console.log(err.stack);
-  }
-}
+//     await saveBooks(books);
+//   } catch (err) {
+//     console.log(err.stack);
+//   }
+// }
 
 
-// Listing Books:
-const displayedLibrary = async () => {
-  try {
-    const librarianSays = await getAllBooks(); 
+// // Listing Books:
+// const displayedLibrary = async () => {
+//   try {
+//     const librarianSays = await getAllBooks(); 
     
-    librarianSays.forEach(element => {
-      console.log(element.title);
-    });
-    // console.log(librarianSays);
+//     librarianSays.forEach(element => {
+//       console.log(element.title);
+//     });
+//     // console.log(librarianSays);
 
-  } catch (err) {
-    console.log(err.stack);
-  }
-}
-// displayedLibrary()
+//   } catch (err) {
+//     console.log(err.stack);
+//   }
+// }
+// // displayedLibrary()
 
-// createBook("One Piece", "Eichiro Oda", 1997, 1109)
+// // createBook("One Piece", "Eichiro Oda", 1997, 1109)
 
 
 // Updating book details !!!!not working
-let findAndUpdateBookByName = async (bookName, newTitle, newAuthor, newPublicationYear, newQuantity) => {
+let findBookByNameAndUpdate = async (bookName, newTitle, newAuthor, newPublicationYear, newQuantity) => {
   try {
-    const awaitingUpdate = await getAllBooks();
+    const bookAwaitingUpdate = await getAllBooks();
 
-    for (let i = 0; i < awaitingUpdate.length; i++) {
-      if (awaitingUpdate[i].name === bookName) {
-        awaitingUpdate[i] = {
-          ...awaitingUpdate[i],
-          title: newTitle || books[i].title,
-          author: newAuthor || books[i].author,
-          publicationYear: newPublicationYear || books[i].publicationYear,
-          quantity: newQuantity || books[i].quantity,
-        }
+    const foundBook = bookAwaitingUpdate.find(book => book.title === bookName);
+    if (!foundBook) throw new Error("WRONG INPUT, BOOK NOT FOUND");
+
+    const updatedBook = bookAwaitingUpdate.map(book => {
+      if (book.title === bookName) {
+        return {
+          ...book,
+          title: newTitle,
+          author: newAuthor,
+          publicationYear: newPublicationYear,
+          quantity: newQuantity,
+        };
       }
-      
-    }
-
-    // console.log(findByName);
+    });
+    console.log(updatedBook);
+    // await saveBooks(updatedBook);
+    console.log(foundBook);
   } catch (err) {
-    console.log(err.stack);
+    console.log(`here: ${err.stack} \n msg:${err.message}`);
   }
 }
-findAndUpdateBookByName("Lord of The Rings, something", "lotr", "dohn jhoe", 2000, 1);
+findBookByNameAndUpdate("Lord of The Rings", "Lord of The Rings aaaaa", "JRR Tolkien", 20000, 1);
 
 
-// delete a book
-const deleteBook = async bookId => {
-  try {
-    const books = await getAllBooks();
+// // delete a book
+// const deleteBook = async bookId => {
+//   try {
+//     const books = await getAllBooks();
 
-    const booksAfterDeletion = books.filter(book => book.id !== bookId);
+//     const booksAfterDeletion = books.filter(book => book.id !== bookId);
 
-    await saveBooks(booksAfterDeletion)
-  } catch (err) {
-    console.log(err.stack);
-  }
-}
+//     await saveBooks(booksAfterDeletion)
+//   } catch (err) {
+//     console.log(err.stack);
+//   }
+// }
 
-// deleteBook("b0afa7fe-ff92-437f-8773-9c0fdaab933e")
+// // deleteBook("b0afa7fe-ff92-437f-8773-9c0fdaab933e")
+
