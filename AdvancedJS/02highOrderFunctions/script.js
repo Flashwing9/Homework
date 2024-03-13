@@ -22,7 +22,5 @@ fetch("https://raw.githubusercontent.com/sedc-codecademy/skwd9-04-ajs/main/Sampl
   // console.log(avgGradesFemaleOver24);
   // all male students with name starting with B and average grade over 2
   const maleNameStartsWithBAvgGrade2 = people.filter((people) => people.gender === "Male" && people.averageGrade >= 2 && people.firstName[0] === "B")
-  .map(people => {
-    // console.log(people.firstName);
-  })
+  // console.log(maleNameStartsWithBAvgGrade2);
 })
