@@ -1,11 +1,11 @@
 import { v4 as uuid } from "uuid";
-import { DataService } from "./data.service.js";
+import { DataService } from "./src/data.service.js";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const BOOKS_PATH = path.join(__dirname, "library.json");
+const BOOKS_PATH = path.join(__dirname, "data/library.json");
 
 // 1. Get all books
 const getAllBooks = async () => {
@@ -67,7 +67,7 @@ const saveBooks = async books => {
 // // createBook("One Piece", "Eichiro Oda", 1997, 1109)
 
 
-// Updating book details !!!!not working
+// Updating book details
 let findBookByNameAndUpdate = async (bookName, newTitle, newAuthor, newPublicationYear, newQuantity) => {
   try {
     const bookAwaitingUpdate = await getAllBooks();
@@ -76,7 +76,7 @@ let findBookByNameAndUpdate = async (bookName, newTitle, newAuthor, newPublicati
     if (!foundBook) throw new Error("WRONG INPUT, BOOK NOT FOUND");
 
     const updatedBook = bookAwaitingUpdate.map(book => {
-      if (book.title === bookName) {
+      if (book && book.title === bookName) {
         return {
           ...book,
           title: newTitle,
@@ -93,7 +93,7 @@ let findBookByNameAndUpdate = async (bookName, newTitle, newAuthor, newPublicati
     console.log(`here: ${err.stack} \n msg:${err.message}`);
   }
 }
-findBookByNameAndUpdate("Lord of The Rings", "Lord of The Rings aaaaa", "JRR Tolkien", 20000, 1);
+findBookByNameAndUpdate("Lord of The Rings", "Lord of The Rings aa", "JRR Tolkien", 20000, 1);
 
 
 // // delete a book
