@@ -1,0 +1,42 @@
+/*
+#E6DCC8
+#EBFC72
+#aec0ab
+#212e21
+#ffffff
+*/
+
+.getPackingBox {
+    background-color: #aec0ab;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+}
+
+.custom-shape-divider-top-1714037155 {
+    /* position: sticky; */
+    /* top: 0;
+    left: 0; */
+    /* width: 100%; */
+    /* overflow: hidden; */
+    /* line-height: 0; */
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1714037155 svg {
+    /* position: relative; */
+    display: block;
+    width: calc(227% + 1.3px);
+    height: 285px;
+}
+
+.custom-shape-divider-top-1714037155 .shape-fill {
+    fill: rgb(174,192,171);
+}
+
+.curveEditSection {
+    background-color: white;
+}
+

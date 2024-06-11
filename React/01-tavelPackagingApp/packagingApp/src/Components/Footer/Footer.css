@@ -1,0 +1,16 @@
+/*
+#E6DCC8
+#EBFC72
+#aec0ab
+#212e21
+#ffffff
+*/
+
+footer {
+    background-image: linear-gradient(#ffffff, #ffffff, #EBFC72);
+    height: 39rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}

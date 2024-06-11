@@ -1,0 +1,21 @@
+/*
+#75D701
+#F8F8FF
+#56A902
+#3B4E32
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: grey; */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+}

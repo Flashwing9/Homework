@@ -1,0 +1,30 @@
+/*
+#E6DCC8
+#EBFC72
+#aec0ab
+#212e21
+#ffffff
+*/
+
+
+.allItems {
+    /* background-color: #E6DCC8; */
+    display: flex;
+    gap: 10rem;
+}
+
+.packedItems, .unpackedItems {
+    list-style-type: none;
+    font-size: 2.5rem;
+    border: 1px solid #212e21;
+    border-radius: 2px;
+    padding: 2rem;
+}
+
+.packedItems {
+    background-color: rgb(102, 199, 102);
+}
+
+.unpackedItems {
+    background-color: rgb(212, 91, 91);
+}
