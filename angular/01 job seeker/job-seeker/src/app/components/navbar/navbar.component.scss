@@ -1,0 +1,15 @@
+ul {
+  font-size: 2rem;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+nav {
+  padding: 2.5rem 15rem;
+  margin-bottom: 1;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
